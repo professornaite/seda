@@ -29,6 +29,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r, message=F, warning=F}
+# data import
+# install.packages("readstata13").
+library(readstata13)
+
 library(tidyverse)
 library(ggplot2)
 library(dplyr)
@@ -42,18 +46,50 @@ We import and prepare for the analysis of the [Stanford Education Data Archive (
 
 # DATA
 
-## State data
-
-```{r}
-state_data <- data.frame(state.x77)
-state_data$state <- tolower(rownames(state_data))
-
-```
-
-
 ## Segregation Tracking Project (STP) data
 
 The [STP data](https://edopportunity.org/segregation/) is described as "a comprehensive resource for tracking segregation in the U.S., across every neighborhood and every school."
+
+### National
+
+```{r}
+national <- read.dta13("../data/school_seg_national_1.0.dta")
+```
+
+### State
+
+```{r}
+state <- read.dta13("../data/school_seg_state_1.0.dta")
+```
+
+### County
+
+```{r}
+county <- read.dta13("../data/school_seg_county_1.0.dta")
+```
+
+### Core-Based Statistical Area (2023 definition)
+
+```{r}
+cbsa23 <- read.dta13("../data/school_seg_cbsa23_1.0.dta")
+```
+
+### Administrative School District data
+
+Due to the size of the administrative data, I am unable to pull the data.
+
+```{r, eval=F}
+seg_lea <- read.csv("https://stacks.stanford.edu/file/druid:gm391gj1253/school_seg_lea_1.0.csv")
+```
+
+### Geographic School District
+
+Similar to the administrative school district data, I am unable to pull the large file.
+
+```{r, eval=F}
+seg_geolea<- read.csv("https://stacks.stanford.edu/file/druid:gm391gj1253/school_seg_geolea_1.0.csv")
+```
+
 
 # References
 
