@@ -1,11 +1,28 @@
 # SEDA
 
-This repository contains code, data, and articles from the Stanford Education Data Archive (SEDA).
+This repository contains data from the Stanford Education Data Archive (SEDA) and related projects.
 
-## What is SEDA?
+## About the Data
 
-The Stanford Education Data Archive (SEDA) is an initiative of the Educational Opportunity Project at Stanford University. SEDA provides publicly available data files that include measures of academic achievement, achievement gaps, and school and neighborhood racial and socioeconomic composition and segregation, as well as other features of the U.S. education system. The data cover schools, school districts, counties, commuting zones, metropolitan areas, and states across the United States.
+The datasets in this repository are sourced from the following initiatives:
 
-SEDA is designed to help researchers, policymakers, educators, and parents learn how to improve educational opportunity for all children. The archive includes detailed data on educational conditions, contexts, and outcomes, and can be used to generate evidence about what policies and contexts are most effective at increasing educational opportunity for students nationwide[1][5][6].
+- **Educational Opportunity Project**  
+  Provides measures of academic achievement, achievement gaps, and school and neighborhood demographic information across the United States.
 
-For more information, visit the [Educational Opportunity Project at Stanford University](https://edopportunity.org/).
+- **Education Recovery Project**  
+  Focuses on understanding and tracking educational recovery and progress, particularly in response to recent disruptions in education.
+
+- **Segregation Tracking Project**  
+  Offers data and analyses on patterns of racial and socioeconomic segregation in schools and communities nationwide.
+
+These resources are designed to help researchers, policymakers, educators, and the public better understand educational opportunity, equity, and change in the U.S.
+
+## Data Coverage
+
+The included files contain summary statistics, indicators, and measures at various geographic levels (schools, districts, counties, metropolitan areas, and states), spanning multiple years and versions.
+
+For more information, visit:
+- [Educational Opportunity Project at Stanford University](https://edopportunity.org/)
+- [Education Recovery Scorecard](https://educationrecoveryscorecard.org/)
+- [Segregation Tracking Project](https://segregationtracker.org/)
+
